@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="730dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:fontFamily="cursive"
+            android:freezesText="false"
+            android:text="@string/calculadora_notas_app"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNomeAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nome_do_aluno"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextNomeDisciplina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nome_da_disciplina"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextAtividade1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nota_atividade_1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextAtividade2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nota_atividade_2"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextNotaProva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nota_prova"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextFaltas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/qtde_faltas"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonAvaliar"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="@string/avaliar" />
+
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="@string/limpar" />
+
+        <Button
+            android:id="@+id/buttonDeslogar"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:text="@string/deslogar" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
